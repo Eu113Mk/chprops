@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Profil from './profil/Profil'; 
 
 function App() {
+ 
+    var name ="Amel Kemala"
+  const handleClick = e => {
+    e.preventDefault()
+    alert("Welcome "+name)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <div className="container">
+        <Profil 
+                handleClick={handleClick} 
+                fullName={name}
+                bio="Young graduate from a management IT training with a master's degree in electronic commerce.
+                Being passionate about IT technologies, digital marketing and e-commerce."
+                profession="FullStack JavaScript"
         >
-          Learn React
-        </a>
-      </header>
+          <img src="chihiro.jpg" className="img1" alt="profil"/>
+        </Profil>
+      </div>
     </div>
   );
 }

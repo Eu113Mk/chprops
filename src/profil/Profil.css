@@ -1,0 +1,17 @@
+.profil > h4 {
+    margin : 0;
+    padding :10px 0;
+    border-bottom: 1px solid rgb(88, 32, 65);
+    width: 80%;
+}
+.profil > p {
+    margin : 0;
+    padding : 10px;
+    font-size: 1.2rem;
+    color: lightcoral;
+}
+
+.img1{
+    
+    width: 80%;
+}
